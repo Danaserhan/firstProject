@@ -20,8 +20,8 @@ session_start();
 
 
 // Fetch the student's academic year
-$user_id = $_SESSION['user_id'];
-$academic_year_query = "SELECT academic_year FROM students WHERE user_id = $user_id";
+$user_id = $_SESSION['username'];
+$academic_year_query = "SELECT academic_year FROM students WHERE username = $user_id";
 $academic_year_result = mysqli_query($data, $academic_year_query);
 
 if (!$academic_year_result) {
