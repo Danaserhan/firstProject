@@ -31,6 +31,7 @@ while ($row_failed_courses = $result_failed_courses->fetch_assoc()) {
     $course_credits = $row_failed_courses['course_credits'];
 
     echo "<tr><td>$course_id</td><td>$course_name</td><td>$course_credits</td></tr>";
+    // test
 }
 
 echo "</table>";
